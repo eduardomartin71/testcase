@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="menu">
+    <div class="dropdown">
+      <button type="button" onclick="drpdwnfn()">Proyectos</button>
+      <div id="proyectosdrpdwn">
+        <a id="idproyecto" href="#home">proyecto1</a><!-- Esto va rescondido y lo muestro cuando lo lleno de proyectos -->
+      </div>
+    </div>
+    <div class="contenedor">
+      <--borrar-->
+      Contenedor principal con los casos de proyecto
+      <div class="caselist">
+        <h2 id="casouso">TestCase</h2>
+        <div class="contcases">
+          <ul>
+            <li>caso1--estos se traen de la base</li>
+            <li>caso2--cada caso debería estar en un div con varios span para hacer hueco y un checkbox??</li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="testcasedetail">
+        aquí hay varios tabs, cada uno con sus campos.<br>
+        principal: nombre, objetivo, escenario, resultado, tipo<br>
+        requisitos: listado de requisitos(descipción por cada uno)<br>
+        precondiciones:<br>
+        postcondiciones:<br>
+        pasos:<br>
+        evidencias:<br>
+        
+        En la pestaña principal hay un botón para eleminar el caso.<br>
+        <button type="button" name="name" value="caption" onclick="eliminarcaso()">Eliminar Caso </button>
+        
+
+      </div>
+    </div>
+<!--      los proyectos se cargan tipo dropdown con lo que hay que traérselos de la base-->
+<!--      esta parte debería cambiar cuando se selecciona un proyecto-->
+      
+      
+    
+  </div>
+  <script src="app.js" defer></script>
+  </body>
+</html>
